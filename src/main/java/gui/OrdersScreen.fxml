@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root alignment="CENTER" type="VBox" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ORDERS" textAlignment="CENTER" wrappingWidth="170.3486328125">
+            <font>
+                <Font name="Koulen Regular" size="40.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="30.0" top="30.0" />
+            </VBox.margin>
+        </Text>
+        <HBox alignment="TOP_CENTER" spacing="18.0">
+            <children>
+                <VBox>
+                    <children>
+                        <Text fill="#000000a8" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Id">
+                            <font>
+                                <Font name="Koulen Regular" size="14.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="filterOrderId" prefHeight="31.0" prefWidth="187.0">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                        </TextField>
+                    </children>
+                </VBox>
+                <VBox>
+                    <children>
+                        <Text fill="#000000a8" strokeType="OUTSIDE" strokeWidth="0.0" text="From">
+                            <font>
+                                <Font name="Koulen Regular" size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Text>
+                        <DatePicker fx:id="filterDateFrom" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" promptText="yyyy/mm/dd">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </DatePicker>
+                    </children>
+                </VBox>
+                <VBox layoutX="904.0" layoutY="10.0">
+                    <children>
+                        <Text fill="#000000a8" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Status">
+                            <font>
+                                <Font name="Koulen Regular" size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Text>
+                        <ComboBox fx:id="filterOrderStatus" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ComboBox>
+                    </children>
+                </VBox>
+            </children>
+            <VBox.margin>
+                <Insets bottom="10.0" left="25.0" right="25.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="TOP_CENTER" spacing="18.0">
+            <children>
+                <VBox>
+                    <children>
+                        <Text fill="#000000a8" strokeType="OUTSIDE" strokeWidth="0.0" text="Name Buyer">
+                            <font>
+                                <Font name="Koulen Regular" size="14.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="filterNameBuyer" prefHeight="31.0" prefWidth="187.0">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                        </TextField>
+                    </children>
+                </VBox>
+                <VBox>
+                    <children>
+                        <Text fill="#000000a8" strokeType="OUTSIDE" strokeWidth="0.0" text="To">
+                            <font>
+                                <Font name="Koulen Regular" size="14.0" />
+                            </font>
+                        </Text>
+                        <DatePicker fx:id="filterDateTo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" promptText="yyyy/mm/dd" />
+                    </children>
+                </VBox>
+                <VBox>
+                    <children>
+                        <Text fill="#000000a8" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Status">
+                            <font>
+                                <Font name="Koulen Regular" size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Text>
+                        <ComboBox fx:id="filterPaymentStatus" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ComboBox>
+                    </children>
+                </VBox>
+            </children>
+            <VBox.margin>
+                <Insets bottom="10.0" left="25.0" right="25.0" />
+            </VBox.margin>
+        </HBox>
+        <TableView fx:id="ordersTable">
+            <columns>
+                <TableColumn fx:id="idColumn" minWidth="125.0" prefWidth="125.0" text="ORDERID" />
+                <TableColumn fx:id="dateColumn" minWidth="90.0" prefWidth="90.0" text="DATE" />
+                <TableColumn fx:id="statusColumn" minWidth="100.0" prefWidth="100.0" text="ORDER STATUS" />
+                <TableColumn fx:id="paymentColumn" minWidth="100.0" prefWidth="125.0" text="PAYMENT STATUS" />
+                <TableColumn fx:id="buyerColumn" minWidth="100.0" prefWidth="100.0" text="NAME BUYER" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+            <VBox.margin>
+                <Insets bottom="50.0" left="25.0" right="25.0" />
+            </VBox.margin>
+        </TableView>
+    </children>
+</fx:root>

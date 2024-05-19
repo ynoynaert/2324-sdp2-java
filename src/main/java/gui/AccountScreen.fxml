@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root alignment="CENTER" maxWidth="-Infinity" type="VBox" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MY ACCOUNT">
+         <VBox.margin>
+            <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Koulen Regular" size="25.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="businessNameText" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Koulen Regular" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="Koulen Regular" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fx:id="contactNameText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="Koulen Regular" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Industry">
+         <font>
+            <Font name="Koulen Regular" size="14.0" />
+         </font></Text>
+      <Text fx:id="industryText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="Koulen Regular" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Koulen Regular" size="14.0" />
+         </font></Text>
+      <Text fx:id="addressText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="Koulen Regular" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Payment methods">
+         <font>
+            <Font name="Koulen Regular" size="14.0" />
+         </font></Text>
+      <Text fx:id="paymentMethodsText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="Koulen Regular" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contact info">
+         <font>
+            <Font name="Koulen Regular" size="14.0" />
+         </font></Text>
+      <Text fx:id="contactInfoText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="Koulen Regular" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="VAT Number">
+         <font>
+            <Font name="Koulen Regular" size="14.0" />
+         </font></Text>
+      <Text fx:id="vatNumberText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="Koulen Regular" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Text>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</fx:root>

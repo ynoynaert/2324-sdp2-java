@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Maven: com.google.protobuf:protobuf-java:3.21.9">
+    <archive path="C:/Users/Lorenzo/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar" />
+  </library>
+  <library name="Maven: org.openjfx:javafx-controls:19">
+    <archive path="C:/Users/Lorenzo/.m2/repository/org/openjfx/javafx-controls/19/javafx-controls-19.jar" />
+  </library>
+  <library name="Maven: org.openjfx:javafx-base:win:19">
+    <archive path="C:/Users/Lorenzo/.m2/repository/org/openjfx/javafx-base/19/javafx-base-19-win.jar" />
+  </library>
+  <library name="Maven: org.openjfx:javafx-graphics:19">
+    <archive path="C:/Users/Lorenzo/.m2/repository/org/openjfx/javafx-graphics/19/javafx-graphics-19.jar" />
+  </library>
+  <library name="Maven: org.openjfx:javafx-base:19">
+    <archive path="C:/Users/Lorenzo/.m2/repository/org/openjfx/javafx-base/19/javafx-base-19.jar" />
+  </library>
+  <library name="Maven: org.openjfx:javafx-controls:win:19">
+    <archive path="C:/Users/Lorenzo/.m2/repository/org/openjfx/javafx-controls/19/javafx-controls-19-win.jar" />
+  </library>
+  <library name="Maven: org.openjfx:javafx-graphics:win:19">
+    <archive path="C:/Users/Lorenzo/.m2/repository/org/openjfx/javafx-graphics/19/javafx-graphics-19-win.jar" />
+  </library>
+  <library name="Maven: com.mysql:mysql-connector-j:8.0.33">
+    <archive path="C:/Users/Lorenzo/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar" />
+  </library>
+</eclipse-userlibraries>
+

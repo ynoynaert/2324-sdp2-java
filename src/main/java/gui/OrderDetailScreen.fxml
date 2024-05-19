@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root alignment="CENTER" prefWidth="625.0" type="VBox" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMATION">
+                    <font>
+                        <Font name="Koulen Regular" size="25.0" />
+                    </font>
+                </Text>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="closeButton" mnemonicParsing="false" onAction="#onCloseButtonClicked" text="Close">
+               <font>
+                  <Font name="Koulen Regular" size="12.0" />
+               </font></Button>
+         </children>
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" top="50.0" />
+         </VBox.margin>
+      </HBox>
+        <VBox alignment="CENTER_LEFT" maxWidth="-Infinity">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox>
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DATE" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="dateText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="20.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LAST PAYMENT REMINDER">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="paymentText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="20.0" right="20.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENT INFORMATION">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="clientInfoText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="20.0" right="20.0" />
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox>
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SHIPPING ADDRESS">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="shippingAddressText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="20.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PAID">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="paidText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                        <Button fx:id="updatePaymentStatusBtn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#OnUpdatePaymentStatusClicked" prefHeight="25.0" prefWidth="110.0" text="UPDATE STATUS">
+                           <font>
+                              <Font name="Koulen Regular" size="12.0" />
+                           </font></Button>
+                            </children>
+                            <HBox.margin>
+                                <Insets right="20.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="STATUS">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="statusText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                                <Button fx:id="updateOrderStatusBtn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#OnUpdateOrderStatusClicked" prefHeight="25.0" prefWidth="110.0" text="UPDATE STATUS">
+                           <font>
+                              <Font name="Koulen Regular" size="12.0" />
+                           </font></Button>
+                            </children>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL (INCL. VAT)">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                                <Text fx:id="totalText" fill="#8a8787" strokeType="OUTSIDE" strokeWidth="0.0">
+                                    <font>
+                                        <Font name="Koulen Regular" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="20.0" />
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox alignment="BOTTOM_LEFT" prefHeight="504.0" prefWidth="576.0">
+            <children>
+            <HBox alignment="CENTER">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ITEMS">
+                          <font>
+                              <Font name="Koulen Regular" size="25.0" />
+                          </font>
+                      </Text>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="paymentReminderBtn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#sendPaymentReminder" text="SEND PAYMENT REMINDER">
+                     <font>
+                        <Font name="Koulen Regular" size="12.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+                <TableView fx:id="itemTable" prefHeight="400.0" prefWidth="447.0">
+                    <columns>
+                        <TableColumn fx:id="nameColumn" maxWidth="80.0" minWidth="80.0" text="NAME" />
+                        <TableColumn fx:id="pricePerUnitColumn" minWidth="75.0" prefWidth="75.0" text="PRICE PER UNIT" />
+                        <TableColumn fx:id="amountColumn" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" text="AMOUNT" />
+                        <TableColumn fx:id="totalColumn" minWidth="80.0" prefWidth="116.0" text="TOTAL" />
+                        <TableColumn fx:id="totalVatColumn" minWidth="30.0" prefWidth="75.0" text="VAT" />
+                        <TableColumn fx:id="availabilityColumn" maxWidth="80.0" minWidth="80.0" text="AVAILABLE" />
+                    </columns>
+                    <VBox.margin>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="10.0" />
+                    </VBox.margin>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+            </children>
+        </VBox>
+    </children>
+</fx:root>

@@ -1,0 +1,104 @@
+.table-row-cell:selected {
+    -fx-background-color: #EC4842;
+    -fx-table-cell-border-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+
+.redborder {
+    -fx-border-color: #EC4842;
+}
+
+.table-view:focused {
+	-fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color; 
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5, 4, 3;
+    -fx-border-color: #EC4842;
+}
+
+.button:focused {
+	-fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color; 
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5, 4, 3;
+    -fx-border-color: #EC4842;
+}
+
+.text-field:focused {
+    -fx-background-insets: 0, 1, 2;
+    -fx-border-color: #EC4842;
+}
+
+.combo-box:focused {
+	-fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color; 
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5, 4, 3;
+    -fx-border-color: #EC4842;
+}
+
+.combo-box:focused .list-cell:selected {
+    -fx-background-color: #EC4842;
+    -fx-table-cell-border-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+
+.check-box:focused > .box {
+    -fx-border-color: #EC4842;
+}
+
+.combo-box .list-cell:hover {
+   	-fx-background-color: #EC4842;
+    -fx-table-cell-border-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+
+.date-picker:focused {
+    -fx-background-color: #EC4842;
+    -fx-background-radius: 5, 4, 3;
+}
+
+.date-picker .arrow-button {
+	-fx-background-color: #EC4842;
+	-fx-background-radius: 0;
+}
+.date-picker .arrow-button:hover {
+	-fx-background-color: #EC4842;
+}
+.date-picker .arrow-button .arrow {
+	-fx-background-color: white;
+}
+.date-picker .cell {
+	-fx-background-color: white;
+}
+.firstSelection {
+	-fx-opacity: 0;
+}
+.date-picker .cell:hover {
+	-fx-background-color: lightgrey;
+}
+.date-picker .cell:focused {
+	-fx-background-color: lightgrey;
+}
+.date-picker .selected {
+	-fx-background-color: #EC4842;
+	-fx-text-fill: white;
+}
+.date-picker .selected:focused {
+	-fx-background-color: #EC4842;
+	-fx-text-fill: white;
+}
+.date-picker-popup  {
+	-fx-border-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+	-fx-background-color: #EC4842;
+}
+.date-picker-popup .month-year-pane .label {
+	-fx-text-fill: white;
+}
+.date-picker-popup .week-number-cell {
+	-fx-text-fill: #EC4842;
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+	-fx-background-color: white;
+}
+
